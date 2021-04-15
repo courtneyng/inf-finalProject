@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <title>Student ITS</title>
+        <link rel="stylesheet" href = "home.css">
+        <script src="home.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <!-- The navigation bar, the img is the logo to the home page-->
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" id="homeImg"><img src="assets/imgs/logo.png" alt="logo" id="logo"></a>
+            <a href="resources.html">Student Resources</a>
+            <a href="its.html">ITS</a>
+            <a href="faq.html">FAQs</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+
+        <!-- Class to center text -->
+        <div class="aboutText">
+            <h1>About the Creator</h1>
+            <h3>Hello, I am Courtney
+                I am an aspiring full stack developer from Queens, NY with experience in Android, IOS, and web development. 
+                Currently I’m a freshman computer science major at the university. I enjoy playing video games, watching shows,
+                and listening to music. I can play several instruments but my main one is piano. 
+            </h3>
+
+            <p>Here is a ringtone I made a couple years ago, I actually use it currently.</p>
+            
+            <!-- Playing audio will say if the browser doesn't support it -->
+            <audio controls>
+                <source src="assets/audio/ringtone.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+
+        </div>
+
+        <!-- Contact form -->
+        <div class="container">
+            <!--<form action="mailto:cng4@albany.edu" method="post" enctype="text/plain"> -->
+            <form method="post" name = "contact" action="contact.php">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="firstname" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="text" id="email" name="lastname" placeholder="Your email..">
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+
+        <!-- 
+            Adds a div to center the text in the container
+            Links to the UAlbany ITS website and Student Association website
+            Allows user to email me directly
+        -->
+        <div class="center">
+            <h3>Quick Links</h3>
+            <a href="https://www.albany.edu/its/" target="_blank">UAlbany ITS</a><br>
+            <a href="https://www.saualbany.com/" target="_blank">UAlbany SA</a><br>
+            <!--Sends an email to my email-->
+            <a href="mailto:cng4@albany.edu">Email me!</a>
+            <p>1400 Washington Ave Albany, NY 12222</p>
+        </div>
+    </body>
+
+    
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student ITS</title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href = "home.css">
+        <script src="home.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        
+        <!-- The navigation bar, the img is the logo to the home page-->
+        <div class="topnav" id="myTopnav">
+            <a href="home.html" id="homeImg"><img src="assets/imgs/logo.png" alt="logo" id="logo"></a>
+            <a href="resources.html">Student Resources</a>
+            <a href="its.html">ITS</a>
+            <a href="faq.html">FAQs</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </div>
+
+        <!-- Is the banner image on the home page-->
+        <img src="assets/imgs/banner.png" alt="banner" id="banner">
+
+        <!-- Container for the buttons, each link to their designated page-->
+        <div class="buttonLinks">
+            <a href="resources.html" class="likeAButton button2">Student Resources</a>
+            <a href="its.html" class="likeAButton button2">ITS</a>
+            <a href="faq.html" class="likeAButton button2">FAQs</a>
+            <a href="about.html" class="likeAButton button2">About</a>
+        </div>
+
+        <!-- 
+            Adds a div to center the text in the container
+            Links to the UAlbany ITS website and Student Association website
+            Allows user to email me directly
+        -->
+        <div class="center">
+            <h3>Quick Links</h3>
+            <a href="https://www.albany.edu/its/" target="_blank">UAlbany ITS</a><br>
+            <a href="https://www.saualbany.com/" target="_blank">UAlbany SA</a><br>
+            <!--Sends an email to my email-->
+            <a href="mailto:cng4@albany.edu">Email me!</a>
+            <p>1400 Washington Ave Albany, NY 12222</p>
+        </div>
+    </body>
+</html>
